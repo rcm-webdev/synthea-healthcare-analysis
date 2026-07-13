@@ -1,0 +1,19 @@
+# Local Synthea source files and generated extracts
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Local configuration
+.env
+.DS_Store
+.idea/
+.vscode/
+
+# Database and temporary files
+pgdata/
+*.log
+*.tmp
+
+# Validation data used only while preparing this starter kit
+.validation_data/
