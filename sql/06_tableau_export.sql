@@ -1,0 +1,27 @@
+SELECT
+    encounter_id,
+    start_time,
+    stop_time,
+    encounter_month,
+    encounter_year,
+    encounter_class,
+    encounter_description,
+    patient_id,
+    patient_gender,
+    patient_race,
+    patient_ethnicity,
+    patient_age_at_encounter,
+    organization_id,
+    organization_name,
+    organization_city,
+    organization_state,
+    payer_id,
+    payer_name,
+    base_encounter_cost,
+    total_claim_cost,
+    payer_coverage,
+    patient_responsibility,
+    payer_coverage_rate,
+    encounter_duration_hours
+FROM analytics.vw_encounter_analysis
+ORDER BY start_time, encounter_id;
